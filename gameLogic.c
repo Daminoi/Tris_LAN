@@ -488,6 +488,9 @@ void game(struct gameState* game_state){
                                         printf("\n\n\tYou have LOST.\n");
                                     }
 
+                                    printf("\n\n\tPress ENTER to continue...\n");
+                                    wait_for_any_key_press();
+
                                     prepare_message(&snd_msg, OK, 0, 0, 0);
                                     send_message(&snd_msg);
 
@@ -551,6 +554,9 @@ void game(struct gameState* game_state){
                                     else{
                                         printf("\n\n\tYou have LOST.\n");
                                     }
+
+                                    printf("\n\n\tPress ENTER to continue...\n");
+                                    wait_for_any_key_press();
 
                                     pthread_mutex_lock(&conn_status_mutex);
                                     conn_status.terminated_by_game = true;
