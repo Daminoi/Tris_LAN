@@ -13,7 +13,7 @@ gcc -o tris common.c communication.c discovery.c gameLogic.c minilogger.c TrisLA
 Then execute the program (no parameters needed).
 
 ## Testing
-![a guest connects to the host](interface.png)
+![interface](interface.png)
 The text interface is sufficient to test the program.
 The resynchronization feature is not implemented yet.
 
