@@ -231,7 +231,7 @@ void host_new_game(){
     }
     tcp_port = ntohs(accept_adddress.sin_port);
 
-    if (listen(accept_socket, 2) < 0){
+    if (listen(accept_socket, 0) < 0){
         mini_log(ERROR, "host_new_game", -1, "Unable to listen on the tcp socket");
         close(accept_socket);
         return;
