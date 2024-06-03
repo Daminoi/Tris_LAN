@@ -81,7 +81,7 @@ void print_game_field(){
 }
 
 bool can_place_symbol(int pos){
-    if (pos < 0 || pos > 9){
+    if (pos < 0 || pos > 8){
         return false;
     }
     else{
