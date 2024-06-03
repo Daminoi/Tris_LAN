@@ -107,6 +107,7 @@ void close_socket(int socket){
 }
 
 void wait_for_any_key_press(){
-    fflush(stdin);
+    int tmp;
+    while( (tmp = getchar()) != '\n' && tmp != EOF);
     getchar();
 }
