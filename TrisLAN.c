@@ -268,6 +268,7 @@ void host_new_game(){
             mini_log(ERROR, "host_new_game", -1, "Unable to accept a guest");
         }
     }
+    close(accept_socket);
 
     sigaction(SIGINT, &previous_handler, NULL);
 
@@ -293,8 +294,6 @@ void host_new_game(){
 
         close(connection_socket);
     }
-
-    close(accept_socket);
 }
 
 
