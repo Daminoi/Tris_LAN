@@ -187,7 +187,7 @@ void game(struct gameState* game_state){
     message_queue_out_curr_size = 0;
 
     for(int i=0; i < 9; ++i){
-        game_field[i] == 0;
+        game_field[i] = 0;
     }
 
     struct message rcv_msg;
